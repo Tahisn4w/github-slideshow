@@ -1,13 +1,24 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sana Özel</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    <div class="container">
+        <button id="loveButton">Buraya Tıkla!</button>
+
+        <div id="messageArea" class="hidden">
+            <h1>SENİ SEVİYORUM!</h1>
+            <p class="flowers">
+                💖 🌹 🌷 🌸 🌼 🌻 🌺 💐 💖
+            </p>
+            <p> (Tüm kalbimle.) </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
+

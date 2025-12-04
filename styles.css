@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Açık pembe arka plan */
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#loveButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff69b4; /* Sıcak pembe */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#loveButton:hover {
+    background-color: #ff85c1;
+    transform: scale(1.05);
+}
+
+#messageArea h1 {
+    color: #e91e63; /* Koyu pembe */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.flowers {
+    font-size: 3.5em; /* Çiçek emojileri büyük olsun */
+    animation: bounce 1.5s infinite; /* Çiçeklere basit bir animasyon */
+}
+
+.hidden {
+    display: none; /* Bu sınıf, elementi başlangıçta gizler */
+}
+
+/* Basit Animasyon */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-15px);}
+    60% {transform: translateY(-7px);}
+}
